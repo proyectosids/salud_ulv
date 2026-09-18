@@ -36,7 +36,7 @@ const runAPI = async () => {
         console.log(`API up and running q(≧▽≦q) on http://${host}:${port}`);
 
     } catch (error) {
-        server.log.error(error);
+        console.error(error);
         process.exit(1);
     }
 }

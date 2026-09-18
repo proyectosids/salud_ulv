@@ -2,13 +2,13 @@
   "name": "salud_ulv_backend",
   "version": "4.0.0",
   "description": "",
-  "main": "SaludULV.ts",
+  "main": "dist/SaludULV.js",
   "scripts": {
     "build": "tsc",
     "build:production": "node scripts/build-production.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --delay 1s --exec ts-node src/SaludULV.ts",
-    "start": "node src/SaludULV.js"
+    "start": "node dist/SaludULV.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "type": "module",
   "dependencies": {
     "bcryptjs": "^3.0.3",
+    "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "fastify": "^5.7.4",
     "jsonwebtoken": "^9.0.3",
@@ -29,7 +30,6 @@
     "@types/luxon": "^3.7.1",
     "@types/mssql": "^9.1.9",
     "@types/node": "^25.4.0",
-    "dotenv": "^17.3.1",
     "eslint": "^10.0.3",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
